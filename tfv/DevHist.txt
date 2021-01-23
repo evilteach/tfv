@@ -1,0 +1,63 @@
+
+02/23/2020 - 2.2.1
+calculation of the estimated line count didn't work for files smaller than 100 lines or so.
+
+TFV SHOULD MAKE A SOUND AND FLASH THE SCREEN ON ERROR LIKE END OF FILE.
+
+tfv should be able to override the carriage control if needed
+
+tfv --fixed:80
+tfv --cc:crlf
+tfv --cc:lf
+tfv --cc:cr
+tfv --cc:nul
+
+
+
+C:\BitBucket\projects\PDCurses\delch.c(52): warning C26451: Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).
+C:\BitBucket\projects\PDCurses\initscr.c(126): warning C6011: Dereferencing NULL pointer 'SP'. 
+C:\BitBucket\projects\PDCurses\insch.c(153): warning C26451: Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).
+C:\BitBucket\projects\PDCurses\insch.c(153): warning C26451: Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).
+C:\BitBucket\projects\PDCurses\keyname.c(108): warning C6385: Reading invalid data from 'key_name':  the readable size is '2336' bytes, but '-2064' bytes may be read.
+C:\BitBucket\projects\PDCurses\pdcclip.c(73): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+C:\BitBucket\projects\PDCurses\pdcclip.c(113): warning C6387: 'ptr2' could be '0':  this does not adhere to the specification for the function 'memcpy'. 
+C:\BitBucket\projects\PDCurses\pdcclip.c(103): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+C:\BitBucket\projects\PDCurses\pdcclip.c(113): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+C:\BitBucket\projects\PDCurses\pdcscrn.c(83): warning C28159: Consider using 'GetTickCount64' instead of 'GetTickCount'. Reason: GetTickCount overflows roughly every 49 days.  Code that does not take that into account can loop indefinitely.  GetTickCount64 operates on 64 bit values and does not have that problem
+C:\BitBucket\projects\PDCurses\pdcscrn.c(141): warning C6387: 'hSection' could be '0':  this does not adhere to the specification for the function 'MapViewOfFile'. 
+C:\BitBucket\projects\PDCurses\pdcscrn.c(144): warning C6387: 'ptrView' could be '0':  this does not adhere to the specification for the function 'memcpy'. 
+C:\BitBucket\projects\PDCurses\pdcscrn.c(146): warning C6387: 'ptrView' could be '0':  this does not adhere to the specification for the function 'UnmapViewOfFile'. See line 144 for an earlier location where this can occur
+C:\BitBucket\projects\PDCurses\pdcscrn.c(150): warning C6387: 'hSection' could be '0':  this does not adhere to the specification for the function 'DuplicateHandle'. See line 141 for an earlier location where this can occur
+C:\BitBucket\projects\PDCurses\pdcscrn.c(157): warning C6387: 'hSection' could be '0':  this does not adhere to the specification for the function 'CloseHandle'. See line 141 for an earlier location where this can occur
+C:\BitBucket\projects\PDCurses\pdcscrn.c(304): warning C28159: Consider using 'IsWindows*' instead of 'GetVersion'. Reason: Deprecated. Use VerifyVersionInfo* or IsWindows* macros from VersionHelpers.
+C:\BitBucket\projects\PDCurses\pdcscrn.c(349): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+C:\BitBucket\projects\PDCurses\pdcscrn.c(379): warning C26451: Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).
+C:\BitBucket\projects\PDCurses\refresh.c(96): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).
+C:\BitBucket\projects\PDCurses\refresh.c(96): warning C26451: Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).
+C:\BitBucket\projects\PDCurses\scanw.c(353): warning C26451: Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).
+C:\BitBucket\projects\PDCurses\scanw.c(369): warning C26451: Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).
+C:\BitBucket\projects\PDCurses\scanw.c(282): warning C26451: Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).
+C:\BitBucket\projects\PDCurses\scr_dump.c(105): warning C6054: String 'marker' might not be zero-terminated.
+C:\BitBucket\projects\PDCurses\slk.c(255): warning C6386: Buffer overrun while writing to 'slk[labnum].label':  the writable size is '128' bytes, but '-4' bytes might be written.
+C:\BitBucket\projects\PDCurses\window.c(267): warning C6001: Using uninitialized memory '*win->_y'.
+C:\BitBucket\projects\PDCurses\window.c(480): warning C6001: Using uninitialized memory '*win->_y'.
+1>Done building project "PDCurses.vcxproj".
+2>------ Rebuild All started: Project: tfv, Configuration: Debug x64 ------
+2>App.cpp
+2>bindable_functions.cpp
+2>common.cpp
+2>Console.cpp
+2>Display.cpp
+2>Finder.cpp
+2>Keyboard.cpp
+2>tfv.cpp
+2>Compiling...
+2>Generating Code...
+2>tfv.vcxproj -> C:\BitBucket\projects\x64\Debug\tfv.exe
+C:\BitBucket\projects\tfv\Keyboard.hpp(164): warning C6385: Reading invalid data from 'this->keyNames':  the readable size is '13152' bytes, but 'sub' bytes may be read.
+C:\BitBucket\projects\tfv\common.hpp(593): warning C26495: Variable 'TextLines::showCarriageControl' is uninitialized. Always initialize a member variable (type.6).
+C:\BitBucket\projects\tfv\bindable_functions.cpp(236): warning C26451: Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).
+C:\BitBucket\projects\tfv\Console.cpp(201): warning C6262: Function uses '100016' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.
+C:\BitBucket\projects\tfv\Display.cpp(35): warning C6262: Function uses '100716' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.
+C:\BitBucket\projects\tfv\Finder.cpp(15): warning C26495: Variable 'Finder::_matchColumn' is uninitialized. Always initialize a member variable (type.6).
+C:\BitBucket\projects\tfv\Keyboard.cpp(174): warning C6386: Buffer overrun while writing to 'this->controlFunctions':  the writable size is '4384' bytes, but 'key2' bytes might be written.
